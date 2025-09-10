@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.text{
+    color: aqua;
+}
+
+.parallax {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.parallax.section1 {
+  background-image: url('https://tr.rbxcdn.com/180DAY-c306e4597d4d5dc72414a271e4e1e92b/768/432/Image/Png/noFilter');
+}
+
+.parallax.section3 {
+  background-image: url('https://tr.rbxcdn.com/180DAY-43d69d973d0a7e874352ca25cc58cd47/768/432/Image/Webp/noFilter');
+}
+
+.parallax .text {
+  position: relative;
+  z-index: 1;
+}
+
+.section2 {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}

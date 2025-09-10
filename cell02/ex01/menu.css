@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 50px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+#bread-top {
+  background-color: #e9c69a; /* light bread */
+  color: #3a2600;
+}
+
+#ham {
+  background-color: #d58aa6; /* ham */
+  color: #3a0e1a;
+}
+
+#cheese {
+  background-color: #ffd97a; /* cheese */
+  color: #3a2a00;
+}
+
+#lettuce {
+  background-color: #9fd08b; /* lettuce */
+  color: #003300;
+}
+
+#bread-bottom {
+  background-color: #c48b47; /* dark bread */
+  color: #2f1600;
+}

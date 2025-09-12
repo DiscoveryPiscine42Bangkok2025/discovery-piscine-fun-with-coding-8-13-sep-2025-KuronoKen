@@ -1,0 +1,345 @@
+body {
+    background-image: url("Asset/portbg2.png");
+    border: 0%;
+    margin: 0%;
+    font-family: 'AGENCYFB', 'mitr';
+    display: flex;
+    flex-direction: column;
+    background-size: cover ;
+}
+
+.blacktab{
+    background-color: white;
+    color: black;
+}
+
+.headerlogo{
+    color: black;
+}
+
+img{
+    border-radius: 3vh;
+}
+
+.headerbutton{
+    color: black;
+}
+.profile-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20vh;
+    margin-top: 30vh;
+}
+
+.profile-container {
+    color: black;
+    display: flex;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.868);
+    border: 2px solid black;
+    padding: 3vw 3vh;
+    margin-top: -6%;
+    border-radius: 2%;
+    flex-direction: column;
+}
+
+#nameandportrait{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: fit-content;
+    z-index: 2;
+}
+
+
+/* Portrait */
+.portrait{
+    width: 18%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid black;
+    margin-left: 5%;
+}
+
+/* Name */
+.name {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.name h1 {
+    margin: 0;
+    font-size: 3vw;
+}
+
+.name h2 {
+    margin: 0;
+    font-size: 2vw;
+    color: gray;
+}
+
+/* Profile content */
+.profile-content {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.profile-content p {
+    font-size: 2vw;
+    line-height: 1.6;
+}
+
+#about{
+    margin-top: -3%;
+}
+
+#personal-info{
+    margin-left: 2%;
+    margin-top: 8%;
+    width: 35%;
+    padding-right: 5%;
+    border-right: 2px solid rgb(0, 0, 0);
+    font-size: 2.5vh;
+    height: fit-content;
+}
+
+#backgroundofme{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+    width: auto;
+    height: 100%;
+}
+
+.line{
+    width: 2px;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.imgshowcasecontainer{
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+.imgshowcasecontainer2{
+    width: 40%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+h1{
+    font-size: 2vw;
+}
+
+#showcase{
+    align-items: center;
+}
+
+.showcaseimg{
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.showcasedetail{
+    margin-right: 5%;
+    width: fit-content;
+}
+
+.showcasedetail2{
+    margin-right: 5%;
+    margin-left: 2%;
+    width: fit-content;
+}
+
+.showcasetitle{
+    font-weight: bold;
+}
+
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: row-reverse;
+    align-content: center ;
+    border-top: 2px solid black;
+}
+
+#footerportrait{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
+    margin-left: 4%;
+    width: 10%;
+}
+
+#contact{
+    width: 20%;
+    color: rgb(0, 0, 0);
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: end;
+}
+
+.socials {
+    display: flex;
+    color: black;
+    justify-content: space-between; 
+    align-items: center;         
+    width: max-content;           
+    height: 20%;                  
+    align-self: flex-end;
+}
+
+
+
+.socials > a {
+    height: 100%;   
+    width: auto;      
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.socials > a > img{
+    height: 100%;
+    margin: 5px;
+    width: auto;
+    filter: brightness(0%);
+}
+
+.socials > a:hover {
+    transform: scale(1.2); 
+}
+
+/*mobile*/
+@media screen and (max-width: 800px) {
+    
+    .profile-wrapper {
+        margin-top: 15vh;
+        padding-bottom: 10vh;
+    }
+
+    #nameandportrait {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .portrait {
+        width: 35%; 
+        margin-left: 0;
+        margin-bottom: 2vh;
+    }
+
+    .name {
+        margin-left: 0;
+        margin-top: 1vh;
+        text-align: center;
+    }
+
+    .name h1 {
+        font-size: 6vw;
+    }
+
+    .name h2 {
+        font-size: 4vw;
+    }
+
+    .profile-container {
+        width: 95%;
+        padding: 5vw 3vw;
+        margin-top: 5%;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        margin-bottom: 5vh;
+        align-items: center;
+    }
+
+    #personal-info, #backgroundofme {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        border-right: none;
+        padding-right: 0;
+        margin-top: 2vh;
+    }
+
+    #personal-info{
+        font-size: 3vw;
+    }
+
+    #backgroundofme p {
+        font-size: 4vw;
+    }
+
+    .imgshowcasecontainer, .imgshowcasecontainer2 {
+        width: 90%;
+        margin: 2vh auto;
+    }
+
+    .showcasedetail, .showcasedetail2 {
+        margin: 2vh auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .showcaseimg {
+        width: 100%;
+    }
+
+    .showcasetitle {
+        font-size: 5vw;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 2vh 0;
+        align-items: center;
+    }
+
+    #footerportrait {
+        width: 25%;
+        margin: 2vh 0;
+    }
+
+    #contact {
+        width: 90%;
+        margin: 2vh 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .socials {
+        width: 60%;
+        justify-content: space-around;
+        height: auto;
+        align-self: center;
+    }
+
+    .socials > a > img {
+        height: 40px;
+        width: auto;
+        margin: 0 5px;
+    }
+}

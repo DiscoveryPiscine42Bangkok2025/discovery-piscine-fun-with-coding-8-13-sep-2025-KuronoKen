@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="Default.css">
+	<link rel="stylesheet" href="landing.css">
+	
+</head>
+	
+<body>
+	<!-- nav bar -->
+	<div class="blacktab">
+		<div class="navleft">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <a class="headerlogo" href="index.html">Portfolio</a>
+        </div>
+        <div class="navcontainer" id="navlinks">
+            <a class="headerbutton" href="pupracha.html">
+                CBOONWAT
+			</a>
+            <a class="headerbutton" href="cboonwat.html">
+                PUPRACHA
+			</a>
+        </div>
+	</div>
+
+	<div class="container">
+		<div id="Banner" onmouseover="GlowingLogo()" onmouseleave="LightoutLogo()">
+			<h1 id="Logo">Portfolio</h1>
+			<div id="glowingbar">
+
+			</div>
+			<p id="Introduction">
+				&emsp;"Achievement in progress—shaping what’s next."
+			</p>
+		</div>
+
+		<nav id="Options">
+			<a id="port1" onmouseenter="IconHover(this.id,1)" onmouseleave="IconHover(this.id,0)"href="pupracha.html">
+				<img class="original" id="port1og" src="Asset/port1.png" alt="">
+				<img class="active" id="port1ac" src="Asset/port1Active.png" alt="">
+			</a>
+			<a id="port2" onmouseenter="IconHover(this.id,1)" onmouseleave="IconHover(this.id,0)" href="cboonwat.html">
+				<img class="original" id="port2og" src="Asset/port2.png" alt="">
+				<img class="active" id="port2ac" src="Asset/port2Active.png" alt="">
+			</a>
+			
+		</nav>
+	</div>
+
+	
+
+	
+
+
+</body>
+
+
+<script src="landing.js"></script>
+
+
+
+</html>

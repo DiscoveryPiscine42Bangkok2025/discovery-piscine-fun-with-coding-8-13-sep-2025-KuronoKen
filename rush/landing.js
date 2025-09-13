@@ -10,13 +10,6 @@ function LightoutLogo(){
     document.getElementById("glowingbar").style.boxShadow = "0 0 0px white"; 
 }
 
-function ClearIntro(){
-    if (hovering == false) {
-        document.getElementById("Introduction").style.opacity = 0;
-        document.getElementById("DefaultIntroduction").style.opacity = 1;
-    }
-}
-
 
 function IconHover(Icon,moving) {
     // 0 is exit 1 is enter
@@ -30,9 +23,6 @@ function IconHover(Icon,moving) {
     }
 }
 
-function Copy(text) {
-    navigator.clipboard.writeText(text);
-}
 
 
 const hamburger = document.getElementById("hamburger");

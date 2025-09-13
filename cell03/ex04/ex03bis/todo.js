@@ -9,7 +9,7 @@ function readCookie() {
             if (cell[0] == 'todo') {
                 let array = JSON.parse(cell[1]);
                 for (let i = 0; i < array.length; i++) {
-                    Create(array[i]);
+                    CreateLoad(array[i]);
                 }
             }
         }
@@ -42,6 +42,20 @@ function Create(name) {
             }
         })
         container.prepend(newdiv);
+    }
+    check();
+}
+
+function CreateLoad(name) {
+    if (name != "") {
+        let newdiv = $("<div>",{
+            text : name,
+            class : "todo",
+            click : function(){
+                Remove(newdiv);
+            }
+        })
+        container.append(newdiv);
     }
     check();
 }

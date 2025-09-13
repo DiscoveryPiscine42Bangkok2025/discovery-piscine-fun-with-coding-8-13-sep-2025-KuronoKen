@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <form id="daform" >
+    <form id="daform">
         <input type="text" name="Number1" id="num1">
         <select name="Operator" id="op">
             <option value="+">+</option>
@@ -36,13 +36,14 @@
         <input type="text" name="Number2" id="num2">
         <input type="submit" value="Try me!" id="sub">
     </form>
-    
+
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script>
 
-    $("#sub").click(function(){
+    $("#daform").submit(function (e) {
+        e.preventDefault();
         calc();
     });
 
@@ -56,6 +57,9 @@
         if (n1 < 0 || n2 < 0) {
             alert("Error :(Negative Number)");
             return;
+        } else if (isNaN(n1) || isNaN(n2)) {
+            alert("Please enter valid numbers!");
+            return;
         }
 
         if (op == '+') {
@@ -67,14 +71,14 @@
         } else if (op == '/') {
             if (n2 === 0) {
                 alert("It's over 9000!");
-                console.log(n1/n2);
+                console.log(n1 / n2);
                 return;
             }
             ans = n1 / n2;
-        }else if (op == '%') {
+        } else if (op == '%') {
             if (n2 === 0) {
                 alert("It's over 9000!");
-                console.log(n1%n2);
+                console.log(n1 % n2);
                 return;
             }
             ans = n1 % n2;

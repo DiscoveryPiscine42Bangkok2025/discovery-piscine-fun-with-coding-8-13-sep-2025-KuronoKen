@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #ft_list {
+            width: 80%;
+            height: fit-content;
+            margin-top: 5vh;
+            display: none;
+            border: 2px solid greenyellow;
+            flex-direction: column-reverse;
+        }
+
+        .todo {
+            font-size: 2.5vh;
+            width: 100%;
+            border: 1px solid white;
+            color: white;
+        }
+        button{
+            font-size: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="ft_list">
+        </div>
+        <button onclick="CreateNew()" id="Newbtn">New</button>
+    </center>
+
+</body>
+
+<script src="todo.js"></script>
+
+</html>

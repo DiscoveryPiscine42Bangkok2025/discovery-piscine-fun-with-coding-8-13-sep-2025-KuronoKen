@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            height: 5vh;
+            font-size: 2vh;
+        }
+
+        select {
+            height: 5vh;
+            font-size: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="calc(this); return false;">
+        <input type="text" name="Number1" id="num1">
+        <select name="Operator" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" name="Number2" id="num2">
+        <input type="submit" value="Try me!">
+    </form>
+    
+</body>
+
+<script>
+
+    function calc(form) {
+        let n1 = Number(form.Number1.value);
+        let n2 = Number(form.Number2.value);
+        let op = form.Operator.value;
+        let ans = 0;
+
+        if (n1 < 0 || n2 < 0) {
+            alert("Error :(Negative Number)");
+            return;
+        }
+
+        if (op == '+') {
+            ans = n1 + n2;
+        } else if (op == '-') {
+            ans = n1 - n2;
+        } else if (op == '*') {
+            ans = n1 * n2;
+        } else if (op == '/') {
+            if (n2 === 0) {
+                alert("It's over 9000!");
+                console.log(n1/n2);
+                return;
+            }
+            ans = n1 / n2;
+        }else if (op == '%') {
+            if (n2 === 0) {
+                alert("It's over 9000!");
+                console.log(n1%n2);
+                return;
+            }
+            ans = n1 % n2;
+        }
+
+        alert(ans);
+        console.log(ans);
+    }
+
+    setInterval(function () {
+        alert("Please, use me...");
+    }, 30000);
+</script>
+
+</html>

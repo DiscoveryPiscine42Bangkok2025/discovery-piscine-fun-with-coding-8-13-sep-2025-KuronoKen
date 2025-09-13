@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            border-radius: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="balloon">
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+        let balloon = $("#balloon");
+        let size = 200;
+        let minsize = 200;
+        let maxsize = 420;
+        let color = ['red','blue','green'];
+        let currentcolor = 0;
+        function expand(){
+            size += 10;
+            currentcolor = (currentcolor + 1)%3;
+            if (size > maxsize){
+                size = minsize;
+            }
+            balloon.css("background-color",color[currentcolor]);
+            balloon.css("width",size+'px');
+            balloon.css("height",size+'px');
+        }
+        function shrink(){
+            size = Math.max(size-5,minsize);
+            balloon.css("width",size+'px');
+            balloon.css("height",size+'px');
+            currentcolor = (currentcolor - 1)%3;
+            if (currentcolor < 0){
+                currentcolor = 2;
+            }
+            console.log(currentcolor);
+            balloon.css("background-color",color[currentcolor]);
+        }
+        balloon.click(function(){expand();});
+        balloon.mouseleave(function(){shrink();});
+        
+    </script>
+</html>
